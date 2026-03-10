@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Website</title>
+<title>My Portfolio Website</title>
 
 <style>
 
 body{
-    margin:0;
-    font-family: Arial;
-    background-color:#f2f2f2;
-    text-align:center;
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+text-align:center;
 }
 
 /* Navigation bar */
 .navbar{
-    background-color:#333;
-    padding:15px;
+background:#222;
+padding:15px;
 }
 
 .navbar a{
-    color:white;
-    text-decoration:none;
-    margin:20px;
-    font-size:20px;
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:18px;
 }
 
 .navbar a:hover{
-    color:yellow;
+color:yellow;
 }
 
-/* Header */
-.header{
-    padding:40px;
-    background:#4CAF50;
-    color:white;
+/* Hero section */
+.hero{
+background:#4CAF50;
+color:white;
+padding:80px 20px;
 }
 
-/* Image gallery */
+.hero h1{
+font-size:50px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+/* About section */
+.about{
+padding:40px;
+font-size:20px;
+}
+
+/* Gallery */
+.gallery{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:20px;
+}
+
 .gallery img{
-    width:250px;
-    margin:15px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+width:250px;
+margin:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
 }
 
 .gallery img:hover{
-    transform:scale(1.05);
+transform:scale(1.1);
+}
+
+/* Footer */
+.footer{
+background:#222;
+color:white;
+padding:15px;
+margin-top:30px;
 }
 
 </style>
@@ -57,18 +87,28 @@ body{
 <!-- Navigation -->
 <div class="navbar">
 <a href="#">Home</a>
-<a href="#">Gallery</a>
-<a href="#">Links</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </div>
 
-<!-- Header -->
-<div class="header">
-<h1>Welcome to My Website</h1>
-<p>This is my first hosted webpage</p>
+<!-- Hero -->
+<div class="hero">
+<h1>Welcome to My Kingdom</h1>
+<p>My first hosted webpage on GitHub</p>
+</div>
+
+<!-- About -->
+<div class="about" id="about">
+<h2>About Me</h2>
+<p>
+Hello! I am a Computer Science student learning web development.
+This is my first website hosted online.
+</p>
 </div>
 
 <!-- Gallery -->
-<h2>My Images</h2>
+<h2 id="gallery">My Cars</h2>
 
 <div class="gallery">
 <img src="1.jpg">
@@ -82,8 +122,13 @@ body{
 <p>
 <a href="https://www.google.com">Google</a> |
 <a href="https://www.youtube.com">YouTube</a> |
-<a href="https://www.w3schools.com">W3Schools</a>
+<a href="https://www.chatgtp.com">CHATGTP</a>
 </p>
+
+<!-- Footer -->
+<div class="footer" id="contact">
+<p>© 2026 My Website</p>
+</div>
 
 </body>
 </html>
